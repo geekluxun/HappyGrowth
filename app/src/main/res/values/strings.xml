@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">HappyGrowth</string>
+    <string name="food_time_hint">进食时间:</string>
+    <string name="food_time">2016年8月15日 20:00</string>
+    <string name="food_hint">请输入食量(mL)</string>
+    <string name="food_time_add">添加时间</string>
+    <string name="food_save">保存</string>
 </resources>
