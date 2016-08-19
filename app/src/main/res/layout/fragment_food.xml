@@ -4,44 +4,94 @@
               android:layout_height="match_parent"
               android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
+    <RadioGroup
+        android:id="@+id/rg_food_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="@dimen/left_right_margin"
+        >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/food_time_hint"/>
+            android:text="@string/food_type"
+            android:textSize="@dimen/text_size_normal"/>
 
-        <TextView
+        <RadioButton
+            android:id="@+id/rb_milk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/day_food_milk"
+            android:textSize="@dimen/text_size_normal"/>
+
+        <RadioButton
+            android:id="@+id/rb_water"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/day_food_water"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/text_size_normal"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/left_right_margin"
+        android:layout_marginRight="@dimen/left_right_margin">
+
+        <EditText
             android:id="@+id/tv_food_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/food_time"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <EditText
-            android:id="@+id/et_food_amount"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="@string/food_hint"/>
+            android:hint="@string/food_time_hint"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_normal"/>
 
         <Button
             android:id="@+id/btn_add_foodtime"
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="@string/food_time_add"
+            android:textSize="@dimen/text_size_normal"
             />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_save"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/food_save"/>
+        android:layout_marginLeft="@dimen/left_right_margin"
+        android:layout_marginRight="@dimen/left_right_margin"
+        >
+
+        <EditText
+            android:id="@+id/et_food_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/food_hint"
+            android:textSize="@dimen/text_size_normal"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginLeft="@dimen/left_right_margin"
+        android:layout_marginRight="@dimen/left_right_margin"
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/food_save"
+        android:layout_marginTop="20dp"
+        android:textSize="@dimen/text_size_normal"/>
+
+    <Button
+        android:layout_marginLeft="@dimen/left_right_margin"
+        android:layout_marginRight="@dimen/left_right_margin"
+        android:id="@+id/btn_food_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/food_record"
+        android:layout_marginTop="20dp"
+        android:textSize="@dimen/text_size_normal"/>
 
 </LinearLayout>

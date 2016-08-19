@@ -1,8 +1,40 @@
 <resources>
-    <string name="app_name">HappyGrowth</string>
-    <string name="food_time_hint">进食时间:</string>
+    <string name="app_name">乐乐成长</string>
+    <string name="food_time_hint">请输入进食时间</string>
     <string name="food_time">2016年8月15日 20:00</string>
     <string name="food_hint">请输入食量(mL)</string>
     <string name="food_time_add">添加时间</string>
     <string name="food_save">保存</string>
+    <string name="day_food">当日进食</string>
+    <string name="day_food_milk">牛奶</string>
+    <string name="day_food_water">水</string>
+    <string name="food_record">进食记录</string>
+
+    <string name="food_date">日期</string>
+
+    <string name="food_type">食物类型</string>
+
+
+    <string-array name="food_type">
+        <item>全部</item>
+        <item>牛奶</item>
+        <item>水</item>
+    </string-array>
+
+    <string-array name="food_date">
+        <item>选择日期</item>
+    </string-array>
+
+    <string-array name="food_amount_range">
+        <item>全部</item>
+        <item>0~30mL</item>
+        <item>30~60mL</item>
+        <item>60~90mL</item>
+        <item>90~120mL</item>
+        <item>120~150mL</item>
+        <item>150~180mL</item>
+        <item>180mL以上</item>
+    </string-array>
+
+
 </resources>

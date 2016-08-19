@@ -1,36 +1,18 @@
-/*
- * Copyright 2016, The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+
 
 package com.geekluxun.www.happygrowth.food.data.source;
 
 import android.support.annotation.NonNull;
 
 import com.geekluxun.www.happygrowth.food.domain.model.Food;
+import com.geekluxun.www.happygrowth.food.food.FoodAmountRange;
 
-import java.util.LinkedHashMap;
 import java.util.Map;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
 /**
- * Concrete implementation to load tasks from the data sources into a cache.
- * <p>
- * For simplicity, this implements a dumb synchronisation between locally persisted data and data
- * obtained from the server, by using the remote data source only if the local database doesn't
- * exist or is empty.
+ * 向Domain层暴露的获取数据源的接口
  */
 public class FoodRepository implements FoodDataSource {
 
@@ -87,11 +69,16 @@ public class FoodRepository implements FoodDataSource {
         checkNotNull(food);
         //saveFoodFromRemoteDataSource(food, callback);
         mFoodsLocalDataSource.saveFood(food, callback);
+    }
 
-        // Do in memory cache update to keep the app UI up to date
-        if (mCachedFoods == null) {
-            mCachedFoods = new LinkedHashMap<>();
-        }
+    @Override
+    public void getFoods(String date, FoodAmountRange amountRange, String type, @NonNull getFoodsCallback callback) {
+        mFoodsLocalDataSource.getFoods(date, amountRange, type, callback);
+    }
+
+    @Override
+    public void deleteFood(Food food, DeleteFoodCallback callback) {
+        mFoodsLocalDataSource.deleteFood(food, callback);
     }
 
     private void saveFoodFromRemoteDataSource(Food food, @NonNull final SaveFoodsCallback callback) {

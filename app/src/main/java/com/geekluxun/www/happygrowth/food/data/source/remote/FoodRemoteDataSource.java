@@ -20,6 +20,7 @@ import android.support.annotation.NonNull;
 
 import com.geekluxun.www.happygrowth.food.data.source.FoodDataSource;
 import com.geekluxun.www.happygrowth.food.domain.model.Food;
+import com.geekluxun.www.happygrowth.food.food.FoodAmountRange;
 
 /**
  * Implementation of the data source that adds a latency simulating network.
@@ -52,6 +53,16 @@ public class FoodRemoteDataSource implements FoodDataSource {
 
     @Override
     public void saveFood(@NonNull Food food, @NonNull SaveFoodsCallback callback) {
+
+    }
+
+    @Override
+    public void getFoods(String date, FoodAmountRange amountRange, String type, @NonNull getFoodsCallback callback) {
+
+    }
+
+    @Override
+    public void deleteFood(Food food, DeleteFoodCallback callback) {
 
     }
 }
