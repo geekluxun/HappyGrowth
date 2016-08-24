@@ -226,6 +226,11 @@ public class FoodDetailFragment extends Fragment implements FoodDetailContract.V
         builder.create().show();
     }
 
+    @Override
+    public boolean isActive() {
+        return isAdded();
+    }
+
     public class  myDatePickerDialog extends  DatePickerDialog{
 
         public myDatePickerDialog(Context context, OnDateSetListener callBack, int year, int monthOfYear, int dayOfMonth) {

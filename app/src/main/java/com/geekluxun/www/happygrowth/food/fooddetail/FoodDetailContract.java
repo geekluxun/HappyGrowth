@@ -18,6 +18,8 @@ public interface FoodDetailContract {
         void showNoRecord();
         void showDeleteRecordSuccess();
         void showDeleteRecordDialog(FoodDelDigCallback callback);
+        boolean isActive();
+
 //        String getFoodDate();
 //        String getFoodAmountRange();
 //        String getFoodType();
@@ -26,7 +28,6 @@ public interface FoodDetailContract {
     interface Presenter extends BasePresenter{
         void getFoodDetail();
         void setCurSearchCondition(String date, FoodAmountRange amountRange, String type);
-        void init();
         void selectFoodDate();
         void deleteFood(Food food);
     }

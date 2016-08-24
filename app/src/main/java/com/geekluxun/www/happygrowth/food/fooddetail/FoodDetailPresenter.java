@@ -75,10 +75,6 @@ public class FoodDetailPresenter implements FoodDetailContract.Presenter {
         });
     }
 
-    @Override
-    public void init() {
-
-    }
 
     @Override
     public void selectFoodDate() {
@@ -112,8 +108,6 @@ public class FoodDetailPresenter implements FoodDetailContract.Presenter {
 
             }
         });
-
-
     }
 
     @Override
@@ -137,6 +131,4 @@ public class FoodDetailPresenter implements FoodDetailContract.Presenter {
         mCurAmountRange  = amountRange;
         mType = type;
     }
-
-
 }
