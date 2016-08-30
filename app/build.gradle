@@ -8,8 +8,8 @@ android {
         applicationId "com.geekluxun.www.happygrowth"
         minSdkVersion 14
         targetSdkVersion 23
-        versionCode 3
-        versionName "1.0.2"
+        versionCode 4
+        versionName "1.0.3"
 
         testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
     }
@@ -60,4 +60,6 @@ dependencies {
     androidTestCompile "com.android.support.test.espresso:espresso-intents:$rootProject.espressoVersion"
 
     compile 'com.jakewharton:butterknife:7.0.0'
+
+    compile 'com.zhy:autolayout:1.4.3'
 }

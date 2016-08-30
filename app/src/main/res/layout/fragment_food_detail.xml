@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50px"
         android:layout_marginLeft="@dimen/left_right_margin"
         android:layout_marginRight="@dimen/left_right_margin">
 
@@ -24,7 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/day_food_milk"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="50px"
             android:textSize="@dimen/text_size_normal"/>
 
         <TextView
@@ -33,14 +33,14 @@
             android:layout_height="wrap_content"
             android:text="0mL"
             android:textColor="@color/colorPrimary"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="20px"
             android:textSize="@dimen/text_size_normal"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/day_food_water"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="50px"
             android:textSize="@dimen/text_size_normal"/>
 
         <TextView
@@ -48,7 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0mL"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="20px"
             android:textColor="@color/colorPrimary"
             android:textSize="@dimen/text_size_normal"/>
     </LinearLayout>
@@ -60,7 +60,7 @@
         android:orientation="horizontal"
         android:layout_marginLeft="@dimen/left_right_margin"
         android:layout_marginRight="@dimen/left_right_margin"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="50px">
 
         <!--<Spinner-->
             <!--android:id="@+id/sp_food_time"-->
@@ -103,7 +103,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:divider="@color/colorPrimary"
-        android:dividerHeight="2dp"
+        android:dividerHeight="2px"
         android:layout_marginRight="@dimen/left_right_margin"
         android:layout_marginLeft="@dimen/left_right_margin"
         >

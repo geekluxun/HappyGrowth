@@ -5,7 +5,7 @@
     <dimen name="text_margin">16dp</dimen>
 
 
-    <dimen name="text_size_normal">15dp</dimen>
+    <dimen name="text_size_normal">40px</dimen>
 
-    <dimen name="left_right_margin">20dp</dimen>
+    <dimen name="left_right_margin">50px</dimen>
 </resources>

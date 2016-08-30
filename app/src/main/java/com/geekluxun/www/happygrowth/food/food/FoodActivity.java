@@ -1,14 +1,14 @@
 package com.geekluxun.www.happygrowth.food.food;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 
 import com.geekluxun.www.happygrowth.Injection;
 import com.geekluxun.www.happygrowth.R;
 import com.geekluxun.www.happygrowth.util.ActivityUtils;
+import com.zhy.autolayout.AutoLayoutActivity;
 
 
-public class FoodActivity extends AppCompatActivity {
+public class FoodActivity extends AutoLayoutActivity {
 
     private FoodPresenter mFoodsPresenter;
 
